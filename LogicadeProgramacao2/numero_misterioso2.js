@@ -27,6 +27,11 @@ const verificacao = () => {
     }
 }
 
+const novoNumero = () => {
+    numeroSecreto = parseInt(Math.random()*100 + 1);
+    console.log(numeroSecreto);
+}
+
 
 
 
