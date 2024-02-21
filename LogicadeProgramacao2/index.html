@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Jogo do Número Secreto</title>
 </head>
 <body>
-    <h1>Bem-vindo ao jogo do número secreto!</h1>
-    <p>Tente adivinhar o número secreto inserindo um número de 1 a 100.</p>
-    <input type="text" min="1" max="100">
-    <button onclick="verificacao()"> chutar!</button>
-    <button onclick="novoNumero()">novo número</button>
-    <h2></h2>
+    <section id="fullgame">
+        <div id="upperpart">
+            <h1>Bem-vindo ao jogo do número secreto!</h1>
+            <p id="description">Tente adivinhar o número secreto inserindo um número de 1 a 100.</p>
+            <input type="text" min="1" max="100">
+        </div>
+        <div id="buttons">
+            <button onclick="verificacao()" class="button"> chutar!</button>
+            <button onclick="novoNumero()" class="button">novo número</button>
+        </div>
+        <div id="message">
+            <h3></h3>
+        </div>
+    </section>
     <script src="numero_misterioso2.js"></script>
 </body>
 </html>
