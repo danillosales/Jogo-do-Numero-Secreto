@@ -18,6 +18,7 @@ const verificacao = () => {
         let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa';
         if(chute === numeroSecreto){
         exibirTextoNaTela('h3',`Acertou! O número secreto é ${numeroSecreto}. Você utilizou um total de ${tentativa} ${palavraTentativa}.`);
+        document.getElementById('new-game').removeAttribute('disabled');
         }else if (chute > numeroSecreto){
         exibirTextoNaTela('h3',`Errou! O número é menor que ${chute}!`);
         limparCampo();
@@ -34,6 +35,7 @@ const novoNumero = () => {
     numeroSecreto = parseInt(Math.random()*100 + 1);
     console.log(numeroSecreto);
     exibirTextoNaTela('h3','');
+    document.getElementById('new-game').setAttribute('disabled','');
 }
 
 const limparCampo = () => {
