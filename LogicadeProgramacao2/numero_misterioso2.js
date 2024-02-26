@@ -1,7 +1,23 @@
 
-let numeroSecreto = parseInt(Math.random()*100 + 1);
+let listaDeNumerosSorteados = [];
+let numeroLimite = 100;
+let numeroSecreto = gerarNumeroSecreto();
 console.log(numeroSecreto);
 let tentativa = 0;
+
+function gerarNumeroSecreto (){
+    let numero = parseInt(Math.random()*numeroLimite + 1);
+    if (listaDeNumerosSorteados.length == numeroLimite){
+        listaDeNumerosSorteados = [];
+    }
+    if(listaDeNumerosSorteados.includes(numero)){
+        return gerarNumeroSecreto();
+    }else{
+        listaDeNumerosSorteados.push(numero);
+        console.log(listaDeNumerosSorteados);
+        return numero;
+    }
+}
 
 const exibirTextoNaTela = (tag,texto) =>{
     let campo = document.querySelector(tag);
@@ -32,7 +48,8 @@ const verificacao = () => {
 }
 
 const novoNumero = () => {
-    numeroSecreto = parseInt(Math.random()*100 + 1);
+    tentativa = 0;
+    numeroSecreto = gerarNumeroSecreto();
     console.log(numeroSecreto);
     exibirTextoNaTela('h3','');
     document.getElementById('new-game').setAttribute('disabled','');
