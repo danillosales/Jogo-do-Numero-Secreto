@@ -20,6 +20,7 @@ h3{
     width: 8rem;
     height: 2.5rem;
     background-color: #4169E1;
+    cursor:pointer;
     color: white;
     border: none;
     border-radius: 7px;
@@ -31,6 +32,16 @@ h3{
 
 .button:hover{
     transform: scale(1.05);
+}
+
+.button-enabled{
+    background-color: #4169E1;
+    cursor:pointer;
+}
+
+.button-disabled{
+    background-color: #a8a8a8;
+    cursor: not-allowed;
 }
 
 input{
