@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
- 
-@media (min-width:1201px){
-    /*Estilos para telas maiores 1200px*/   
+
+@media (min-width:901px) and (max-width:1200px){
+    /*Estilos para telas entre que 901px e 1200px*/    
     h1{
+        
         font-size: 3rem;
     }
     
@@ -10,30 +11,29 @@
         font-size: 1.3rem;
     }
     
+ 
+    
     .button{
         width: 8rem;
         height: 2.5rem;
         font-size: 1rem;
     }
-
+    
     
     input{
         width: 16rem;
         height: 1.5rem;
     }
-      
+    
     
     section#fullgame{
-        width: 70%;
-        height:auto;
+        width: 75%;
+        height:auto;  
     }
-    
+
     body {
         height: 100vh; 
         margin: 0; 
-        background-color: #feffaf;
+        background-color: #b8ffaf;
     }
 }
-
-
-
