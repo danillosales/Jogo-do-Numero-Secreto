@@ -17,6 +17,17 @@
         width: 8rem;
         height: 2.5rem;
         font-size: 1rem;
+        background-color: #30ad1f;
+    }
+
+    .button-enabled{
+        background-color: #30ad1f;
+        cursor:pointer;
+    }
+    
+    .button-disabled{
+        background-color: #a8a8a8;
+        cursor: not-allowed;
     }
     
     

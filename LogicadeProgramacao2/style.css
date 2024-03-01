@@ -30,16 +30,6 @@ h3{
     transform: scale(1.05);
 }
 
-.button-enabled{
-    background-color: #4169E1;
-    cursor:pointer;
-}
-
-.button-disabled{
-    background-color: #a8a8a8;
-    cursor: not-allowed;
-}
-
 input{
     border-width: 2px;
     border-radius: 4px;

@@ -19,6 +19,17 @@
         width: 5rem;
         height: 2.5rem;
         font-size: 0.8rem;
+        background-color: #d31616;
+    }
+
+    .button-enabled{
+        background-color: #d31616;
+        cursor:pointer;
+    }
+    
+    .button-disabled{
+        background-color: #a8a8a8;
+        cursor: not-allowed;
     }
         
     input{
